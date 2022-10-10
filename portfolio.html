@@ -1,113 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-        <!-- Шапка страницы -->
-        <nav>
-            <!-- Логотип страницы -->
-            <a href="" class="logo"><span class="logo-span">Web</span>Studio</a>
-            <!-- Основной блок навигации страницы -->
-            <ul>
-                <li><a href="">Студія</a></li>
-                <li><a href="">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="button">info@devstudio.com</a></li>
-            <li><a href="tel:380961111111" class="button">+38 096 111 11 11</a></li>
-        </ul>   
+      <!-- page header -->
+      <nav>
+        <!-- page logo-->
+        <a href="/" class="logo link">
+          <span class="logo-accent">Web</span>Studio
+        </a>
+        <!-- main navigation -->
+        <ul class="site-nav list">
+          <li><a href="index.html" class="link">Студія</a></li>
+          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="contacts list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link">
+            info@devstudio.com
+          </a>
+        </li>
+        <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
+      </ul>
     </header>
     <main>
-        <h1>Portfolio</h1>
-        <ul>
-            <li><a href="">Усі</a></li>
-            <li><a href="">Веб-сайти</a></li>
-            <li><a href="">Додатки</a></li>
-            <li><a href="">Дизайн</a></li>
-            <li><a href="">Маркетинг</a></li>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/note1.jpg" alt="Веб-сайт Технокряк">
-                <H3>Технокряк</H3>
-                <p>Веб-сайт</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/bascketbal.jpg" alt="Дизайн постера">
-                <H3>Постер New Orlean vs Golden Star</H3>
-                <p>Дизайн</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/fish.jpg" alt="Додаток Ресторан Seafood">
-                <H3>Ресторан Seafood</H3>
-                <p>Додаток</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/hearphones.jpg" alt="Проєкт Prime">
-                <H3>Проєкт Prime</H3>
-                <p>Маркетинг</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/boxes.jpg" alt="Проєкт Boxes">
-                <H3>Проєкт Boxes</H3>
-                <p>Додаток</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/monitor.jpg" alt="Веб-сайт">
-                <H3>Inspiration has no Borders</H3>
-                <p>Веб-сайт</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/book.jpg" alt="">
-                <H3>Видання Limited Edition</H3>
-                <p>Дизайн</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/label.jpg" alt="Проєкт LAB">
-                <H3>Проєкт LAB</H3>
-                <p>Маркетинг</p>
-            </a>
-        </ul>
-        <ul class="li">
-            <a href="">
-                <img src="./img/note2.jpg" alt="Growing Business">
-                <H3>Growing Business</H3>
-                <p>Додаток</p>
-            </a>
-        </ul>
+      <h1 class="title hidden">Портфоліо</h1>
+      <!-- filter -->
+      <ul class="buttons list">
+        <li><button type="button" class="button">Усі</button></li>
+        <li><button type="button" class="button">Веб-сайти</button></li>
+        <li><button type="button" class="button">Додатки</button></li>
+        <li><button type="button" class="button">Дизайн</button></li>
+        <li><button type="button" class="button">Маркетинг</button></li>
+      </ul>
+      <!-- portfolio cards -->
+      <ul class="portfolio list">
+        <li>
+          <img src="./img/note1.jpg" alt="Веб-сайт Технокряк" width="370" height="294"/>
+          <h3 class="subtitle">Технокряк</h3>
+          <p class="description">Веб-сайт</p>
+        </li>
+        <li>
+          <img src="./img/bascketbal.jpg" alt="Дизайн постера" width="370" height="294"/>
+          <h3 class="subtitle">Постер New Orlean vs Golden Star</h3>
+          <p class="description">Дизайн</p>
+        </li>
+        <li>
+          <img src="./img/fish.jpg" alt="Додаток Ресторан Seafood" width="370" height="294"/>
+          <h3 class="subtitle">Ресторан Seafood</h3>
+          <p class="description">Додаток</p>
+        </li>
+        <li>
+          <img src="./img/hearphones.jpg" alt="Проєкт Prime" width="370" height="294"/>
+          <h3 class="subtitle">Проєкт Prime</h3>
+          <p class="description">Маркетинг</p>
+        </li>
+        <li>
+          <img src="./img/boxes.jpg" alt="Проєкт Boxes" width="370" height="294"/>
+          <h3 class="subtitle">Проєкт Boxes</h3>
+          <p class="description">Додаток</p>
+        </li>
+        <li>
+          <img src="./img/monitor.jpg" alt="Веб-сайт" width="370" height="294"/>
+          <h3 class="subtitle" lang="en">Inspiration has no Borders</h3>
+          <p class="description">Веб-сайт</p>
+        </li>
+        <li>
+          <img src="./img/book.jpg" alt="" width="370" height="294"/>
+          <h3 class="subtitle">Видання Limited Edition</h3>
+          <p class="description">Дизайн</p>
+        </li>
+        <li>
+          <img src="./img/label.jpg" alt="Проєкт LAB" width="370" height="294"/>
+          <h3 class="subtitle">Проєкт LAB</h3>
+          <p class="description">Маркетинг</p>
+        </li>
+        <li>
+          <img src="./img/note2.jpg" alt="Growing Business" width="370" height="294"/>
+          <h3 class="subtitle" lang="en">Growing Business</h3>
+          <p class="description">Додаток</p>
+        </li>
+      </ul>
     </main>
     <footer>
-        <!-- Подвал страницы -->
-        <a href="" class="logo"><span class="logo-span">Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a href="https://maps.app.goo.gl/nbSyKvudo2XfWUQa6">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" class="button">info@devstudio.com</a></li>
-                <li><a href="tel:380961111111" class="button">+38 096 111 11 11</a></li>
-            </ul>            
-        </address>
+    <!-- page footer -->
+    <footer class="footer">
+      <a href="" class="logo link"
+        ><span class="logo-accent">Web</span>Studio</a
+      >
+      <address>
+        <ul class="address list">
+          <li class="">
+            <a
+              href="https://maps.app.goo.gl/nbSyKvudo2XfWUQa6"
+              class="map link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              м. Київ, пр-т Лесі Українки, 26
+            </a>
+          </li>
+          <li class="">
+            <a href="mailto:info@devstudio.com" class="link">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="">
+            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <b class="subtitle">приєднуйтесь</b>
+        <ul class="social-media list">
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Instagram"
+              class="link"
+            ></a>
+          </li>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Twitter"
+              class="link"
+            ></a>
+          </li>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Facebook"
+              class="link"
+            ></a>
+          </li>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn"
+              class="link"
+            ></a>
+          </li>
+        </ul>
+      </address>
     </footer>
-
-</body>
+  </body>
 </html>
