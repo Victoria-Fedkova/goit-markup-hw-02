@@ -194,7 +194,6 @@ body {
   color: var(--main-white-color);
 }
 .footer .subtitle {
-  font-style: normal;
   text-transform: uppercase;
   color: var(--main-white-color);
 }
